@@ -9,6 +9,7 @@
 .history
 .svn/
 migrate_working_dir/
+*.info
 
 # IntelliJ related
 *.iml
@@ -30,8 +31,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+/coverage/
 /pubspec.lock
-coverage/
 
 # Symbolication related
 app.*.symbols
