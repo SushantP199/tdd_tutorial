@@ -18,21 +18,25 @@ Future<void> init() async {
         getUsers: sl(),
       ),
     )
+
     // Use Cases
     ..registerLazySingleton(() => CreateUser(sl()))
     ..registerLazySingleton(() => GetUsers(sl()))
+
     // Repositories
     ..registerLazySingleton<AuthenticationRepository>(
       () => AuthenticationRepositoryImplementation(
         sl(),
       ),
     )
+
     // Data Sources
     ..registerLazySingleton<AuthenticationRemoteDataSource>(
       () => AuthRemoteDataSrcImpl(
         sl(),
       ),
     )
+
     // External Dependencies
     ..registerLazySingleton(http.Client.new);
 }
