@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:dartz/dartz.dart';
 import 'package:tdd_tutorial/core/errors/exception.dart';
